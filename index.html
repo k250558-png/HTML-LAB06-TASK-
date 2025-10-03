@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>World Cuisines</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap from W3Schools -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1, h2 { color: darkgreen; }
+    .lead { font-size: 16px; }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Heading -->
+  <h1 class="text-center">Welcome to World Cuisines</h1>
+  <p class="lead text-center">
+    Here you will find information about <b>different cuisines</b> of the world. 
+    It is <i>very interesting</i> to know about foods of other countries. 
+    <u>Explore below!</u>
+  </p>
+  <hr>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Cuisines</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="italian.html">Italian</a></li>
+        <li><a href="chinese.html">Chinese</a></li>
+        <li><a href="pakistani.html">Pakistani</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- List -->
+  <h2>Popular Cuisines</h2>
+  <ul class="list-group">
+    <li class="list-group-item"><a href="italian.html">Italian Cuisine</a></li>
+    <li class="list-group-item"><a href="chinese.html">Chinese Cuisine</a></li>
+    <li class="list-group-item"><a href="pakistani.html">Pakistani Cuisine</a></li>
+  </ul>
+
+  <!-- Table -->
+  <h2>Food Comparison Table</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Famous Dish</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Italy</td><td>Pizza</td></tr>
+        <tr><td>China</td><td>Noodles</td></tr>
+        <tr><td>Pakistan</td><td>Biryani</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Video -->
+  <h2>Watch Food Video</h2>
+  <div class="embed-responsive embed-responsive-16by9">
+<iframe
+class="embed-responsive-item" 
+ width="755" height="433" src="https://www.youtube.com/embed/sv3TXMSv6Lw" title="The Best Homemade Pizza You&#39;ll Ever Eat | Tasty 101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </div>
+
+  <hr>
+
+  <!-- Form -->
+  <h2>Your Favourite Cuisine</h2>
+  <form>
+    <div class="form-group">
+      <label>1. What is your favourite cuisine?</label>
+      <input type="text" class="form-control" name="favCuisine">
+    </div>
+
+    <div class="form-group">
+      <label>2. Which dish you like most?</label>
+      <input type="text" class="form-control" name="dish">
+    </div>
+
+    <div class="form-group">
+      <label>3. How often do you eat outside?</label>
+      <select class="form-control">
+        <option>Rarely</option>
+        <option>Sometimes</option>
+        <option>Often</option>
+      </select>
+    </div>
+
+    <div class="checkbox">
+      <label><input type="checkbox"> Do you want to get food updates?</label>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+
+</div>
+</body>
+</html>
